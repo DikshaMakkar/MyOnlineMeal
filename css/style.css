@@ -1,0 +1,266 @@
+/* CSS Reset */
+* {
+  
+  margin: 0;
+  padding-left: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  width: 100%;
+  top:0px;
+  align-items: center;
+  position: sticky;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+}
+
+/* Navigation Bar: Logo and image */
+#logo {
+  margin: 3px 15px;
+}
+
+#logo img {
+  height: 100px;
+  box-shadow: 5px 5px 10px pink;
+  width: 100px;
+  margin: 15px 21;
+  border-radius: 100px;
+}
+
+/* Navigation Bar: List styling */
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+#navbar ul li a {
+  color: whitesmoke;
+  display: block;
+  padding: 3px 80px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 555px;
+  top: 0px;
+  left: 0px;
+  /* background-image: url("../img/bg.jpg") no-repeat center center/cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px; */
+}
+
+#home::before {
+  content: "";
+  background: url("../img/bg.jpg") no-repeat center center/cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+}
+
+#home h1 {
+  /* color: white; */
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 4px 5px rgb(54, 51, 51);
+  font-family: "Inspiration", cursive;
+}
+
+#home p {
+  font-family: "Caveat", cursive;
+  /* font-family: 'Shippori Antique B1', sans-serif; */
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Service Section */
+#services-container{
+  background-color: #e2ece7;
+  padding-top: 25px;
+}
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 6px;
+  border-radius: 23px;
+  background-color: rgb(241, 240, 238);
+}
+
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+.box img{
+  width: 200px;
+}
+/* Client Section */
+#client-section {
+  position: relative;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg2.jfif");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  height: 300px;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients img {
+  height: 100px;
+  border-radius: 55px;
+}
+
+.client-item {
+  padding: 89px;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(../img/bg3.jfif) no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 55px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 3px solid #8622228f;
+  box-shadow: 5px 5px 6px rgb(117, 79, 79);
+  border-radius: 10px;
+}
+
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.form-group{
+  padding-bottom: 10px;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+.greet{
+  font-size: 29px;
+  text-shadow: 6px 6px 6px black;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Nanum Myeongjo", serif;
+}
+.h-secondary {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.8rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(116, 35, 35);
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(143, 64, 64);
+  color: rgb(235, 223, 223);
+  box-shadow: 5px 5px 6px rgb(180, 127, 111);
+}
+
+.center {
+  text-align: center;
+}
